@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DZFollowViewController: DZViewController {
+class DZFollowViewController: DZTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

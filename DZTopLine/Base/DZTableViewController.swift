@@ -51,13 +51,13 @@ extension DZTableViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.register(DZTableViewCell.self, forCellReuseIdentifier: "DZTableViewCell")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DZTableViewCell", for: indexPath)
+        tableView.register(DZFeedCell.self, forCellReuseIdentifier: "DZFeedCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DZFeedCell", for: indexPath)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return DZFeedCell.heightForView()
     }
 }
 

@@ -19,7 +19,7 @@ class DZFeedCell: DZTableViewCell {
         super.layoutSubviews()
         
         let width: CGFloat = bounds.width
-        let height: CGFloat = bounds.height
+//        let height: CGFloat = bounds.height
         titleLabel.frame = CGRect.init(x: kMargin, y: kMargin, width: width - kMargin * 2, height: kLabelHeight);
         revealView.frame = CGRect.init(x: kMargin, y: titleLabel.frame.maxY + kMargin, width: kScreenWidth - 2 * kMargin, height: DZRevealImageView.heightForView());
     }
